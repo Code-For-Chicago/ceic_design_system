@@ -5,7 +5,7 @@
 Click [here](https://code-for-chicago.github.io/ceic_design_system/) to view the current version site.
 ## Setup for developing locally 
 
-To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and available on your path.  Skip to the Prerequisites section below for information on installing those.
+This site is built with [Jekyll](https://jekyllrb.com/). To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and available on your path.  Skip to the Prerequisites section below for information on installing those.
 
   1. Clone this repository
   1. `cd` into the root directory of this project.
