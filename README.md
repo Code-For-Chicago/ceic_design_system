@@ -8,26 +8,12 @@ Click [here](https://code-for-chicago.github.io/ceic_design_system/) to view the
 This site is built with [Jekyll](https://jekyllrb.com/). To run locally, you will need `npm`, `gem` amd ruby's `bundle` installed and available on your path.  Skip to the Prerequisites section below for information on installing those.
 
   1. Clone this repository
-  1. `cd` into the root directory of this project.
-  1. Install npm dependencies with `npm install`
+  1. `cd` into the root and then "docs" directory of this project.
   1. Install gem dependencies with `bundle install`
   1. Run the server locally, recompiling files as needed, with `bundle exec jekyll serve --watch --baseurl=`
   1. Open [http://localhost:4000/](http://localhost:4000/) in your browser to view the site.
 
 ## Prerequisites
-
-### npm
-To verify you have npm installed:
-
-```
-> npm -v
-6.14.10
-
-> node -v
-v14.15.4
-```
-
-If they are not installed, or your version looks much older than this, proceed to [instructions for installing npm](https://www.npmjs.com/get-npm)
 
 ### ruby
 It is advisable to avoid using the OS install of Ruby that comes bundled with MacOS, Ubuntu, and others. Instead we'd suggest using a Ruby virtual environment like [rbenv](https://github.com/rbenv/rbenv). Installation instructions can be found [here](https://github.com/rbenv/rbenv#installation).
