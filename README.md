@@ -2,7 +2,7 @@
 
 ## A design system for the Cannabis Equity Illinois Coalition, created by Code for Chicago 
 
-Click [here](https://code-for-chicago.github.io/ceic_design_system/) to view the current version site.
+Click [here](https://code-for-chicago.github.io/ceic_design_system/) to view the current version of this site.
 ## Setup for developing locally 
 
 This site is built with [Jekyll](https://jekyllrb.com/). To run locally, you will need `gem` and ruby's `bundle` installed and available on your path.  Skip to the Prerequisites section below for information on installing those.
