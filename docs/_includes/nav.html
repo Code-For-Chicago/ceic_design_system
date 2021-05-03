@@ -1,9 +1,23 @@
+{% assign current = page.url | downcase | split: '/' %}
+
 <nav>
-    <p>Nav bar, example pages:</p>
-    <a href=
-    "{{ site.baseurl }}/">Introduction</a>
-    <a href="instructions.html">Usage Instructions</a>
-    <a href="buttons.html">Buttons</a>
-    <a href="cards.html">Cards</a>
-    <a href="colors.html">Colors</a>
+    <div class="nav-links">
+        <a href=
+        "{{ site.baseurl }}/" {% if current[1] == undefined %}class='current'{% endif %}>Introduction</a>
+        <a href="instructions.html" {% if current[1] == 'instructions' %}class='current'{% endif %}>Usage Instructions</a>
+    </div>
+    <!-- Accessibility questions - should this be a p tag or something more semantic? -->
+    <p>Core</p>
+    <div class="nav-links">
+        <a href="buttons.html" {% if current[1] == 'buttons' %}class='current'{% endif %}>Buttons</a>
+        <a href="cards.html" {% if current[1] == 'cards' %}class='current'{% endif %}>Cards</a>
+        <a href="colors.html" {% if current[1] == 'colors' %}class='current'{% endif %}>Colors</a>
+    </div>
+    <p>Atoms</p>
+    <div class="nav-links">
+        <a href="">Example page</a>
+        <a href="">Example page</a>
+        <a href="">Example page</a>
+        <a href="">Example page</a>
+    </div>
 </nav>

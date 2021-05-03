@@ -1,14 +1,102 @@
 ---
 ---
 
-header, nav, footer {
-    border: 1px dashed;
+html {
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: "freight-sans-pro", "Freight Sans Pro", "Verdana", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
-.test-sass {
-    border: 1px dotted;
+p {
+    margin-bottom: 0.75rem;
+    margin-top: 0.75rem;
+}
+
+
+header {
+    background-color: rgb(13, 119, 172);
+}
+
+.flex-container {
+    margin: 1em;
+}
+
+
+@media only screen and (min-width: 767px) {
+    .flex-container {
+      display: flex;
+    }
+
+    nav {
+        width: 33vw;
+    }
+
+    .main {
+        width: 66vw;
+    }
+  }
+
+nav {
+    margin-right: 2.35765%;
 
     p {
-        color: red;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 1.625rem;
+    }
+    
+    .nav-links {
+        border: 1px solid rgb(223, 223, 223);
+        list-style: outside none none;
+        margin-bottom: 1.25rem;
+        padding: 0px;  
+    }
+    
+    a {
+        border-bottom: 1px solid rgb(223, 223, 223);
+        display: block;
+        padding: 0.75rem;
+        margin: 0;
+        text-decoration: none;
+
+        &:hover {
+            background-color: rgb(245, 245, 246);
+        }
+
+        &:hover, &:active,  &:visited {
+            color: rgb(13, 119, 172);
+        }
+
+        &:focus {
+            background-color: rgb(245, 245, 246);
+            outline: .25em rgb(13, 119, 172) solid;
+        }
+
+        &.current {
+            background-color: rgb(245, 245, 246);
+        }
+
+        &:last-child {
+            border-bottom: 0px none;
+        }
+    }
+}
+
+.main {
+
+    h1 {
+        font-size: 2.625rem;
+        font-weight: 600;
+        line-height: 3rem;
+        margin-top: 0;
+    }
+
+    .intro-text {
+        color: rgb(124, 124, 124);
+        font-size: 1.25rem;
+        line-height: 1.625rem;
+        margin-bottom: 2rem;
     }
 }
