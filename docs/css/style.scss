@@ -4,7 +4,8 @@
 html {
     box-sizing: border-box;
     font-size: 1rem;
-    font-family: "freight-sans-pro", "Freight Sans Pro", "Verdana", "Arial", sans-serif;
+    // font-family: "freight-sans-pro", "Freight Sans Pro", "Verdana", "Arial", sans-serif;
+    font-family: 'Karla', Helvetica, sans-serif;
     font-weight: 400;
     line-height: 1.4;
 }
@@ -26,7 +27,7 @@ header {
 
 @media only screen and (min-width: 767px) {
     .flex-container {
-      display: flex;
+        display: flex;
     }
 
     nav {
@@ -36,7 +37,7 @@ header {
     .main {
         width: 66vw;
     }
-  }
+}
 
 nav {
     margin-right: 2.35765%;
