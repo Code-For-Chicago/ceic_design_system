@@ -1,13 +1,21 @@
 ---
 ---
 
+$font-stack: 'Karla', Helvetica, sans-serif;
+$primary-color: #10A882;
+
 html {
     box-sizing: border-box;
     font-size: 1rem;
     // font-family: "freight-sans-pro", "Freight Sans Pro", "Verdana", "Arial", sans-serif;
-    font-family: 'Karla', Helvetica, sans-serif;
+    font-family: $font-stack;
     font-weight: 400;
     line-height: 1.4;
+}
+
+body {
+    height: 100%;
+    margin: 0;
 }
 
 p {
@@ -17,7 +25,7 @@ p {
 
 
 header {
-    background-color: rgb(13, 119, 172);
+    background-color: $primary-color;
 }
 
 .flex-container {
