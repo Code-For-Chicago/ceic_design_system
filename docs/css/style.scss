@@ -85,13 +85,42 @@ nav {
 }
 
 .main {
+    font-family: 'Karla', Helvetica;
 
     h1 {
-        font-size: 2.625rem;
-        font-weight: 600;
-        line-height: 3rem;
+        font-family: 'Karla', Helvetica;
+        font-size: 38px;
+        font-weight: bold;
+        line-height: 44px;
         margin-top: 0;
     }
+
+    h2 {
+        font-family: 'Karla', Helvetica;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h3 {
+        font-family: 'Karla', Helvetica;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 21px;
+    }
+
+    b {
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
 
     .intro-text {
         color: rgb(124, 124, 124);
@@ -111,4 +140,162 @@ nav {
 .box {
     box-sizing: border-box; 
     padding: 20px;
+}
+
+.type-box {
+    width: 275px;
+    height: auto;
+    padding: 20px;
+}
+
+.example-buttons {
+    width: 364px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.active-button {
+    background: #FFFFFF;
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #093228;
+
+    &:hover {
+        background: #126B55;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF;
+    }
+
+    &:focus {
+        background: #093228;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &:disabled{
+        background: #FFFFFF;
+        border: 1.5px solid #BABABA;
+    }
+}
+
+.hover-button {
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #126B55;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+}
+
+.pressed-button {
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #093228;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.disabled-button {
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #FFFFFF;
+    border: 1.5px solid #BABABA;
+}
+
+.active-button-light {
+    background: #126B55;
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &:hover {
+        background: #FFFFFF;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        color: #093228;
+    }
+}
+
+.hover-button-light {
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: #093228;
+}
+
+.pressed-button-light {
+    border: 1.5px solid #126B55;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #D2D7DF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.disabled-button-light {
+    border: none;
+    border-radius: 5px;
+    width: 101px;
+    height: 35px;
+    font-family: Karla;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    background: #909090;
+    color: #FFFFFF;
 }
